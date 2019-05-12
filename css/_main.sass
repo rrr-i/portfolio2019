@@ -1,0 +1,98 @@
+body
+  width: 100%
+  height: 100%
+  background: $white
+body.hidden
+  overflow: hidden
+#wrapper
+  position: relative
+  width: 100%
+  height: 100%
+main
+  position: relative
+  width: 100%
+  height: 100%
+  color: $black
+  overflow: hidden
+  #first-view
+    position: relative
+    width: 100vw
+    height: 100vh
+    min-height: 600px
+  .first-view-bg
+    position: relative
+    width: 100%
+    height: 100%
+    svg
+      position: absolute
+      opacity: 0
+    svg:nth-child(1)
+      top: 500px
+      left: 25%
+      animation: rect 2s ease-in 3s forwards
+    svg:nth-child(2)
+      top: 280px
+      left: 49%
+      animation: rect 2s ease-in 3.4s forwards
+    svg:nth-child(3)
+      top: 110px
+      left: 75%
+      animation: rect 3s ease-in 4s forwards
+    svg:nth-child(4)
+      top: 70px
+      left:80%
+      animation: rect 2s ease-in 4.6s forwards
+  .section-wrap
+    position: absolute
+    width: 100%
+    max-width: 200px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    overflow: visible
+    svg
+      width: 100%
+      animation: DASH 4.4s ease-in 0s forwards
+      stroke-dasharray: 2000
+      stroke-dashoffset: 2000
+      stroke-width: .8px
+      stroke: $black
+      fill: transparent
+      overflow: visible
+      path:nth-child(n+5):nth-child(-n+8) 
+        fill: transparent
+        animation: Dotted 2s ease-in 1.2s forwards
+        stroke-dasharray: 1000
+        stroke-dashoffset: 1000
+.arrow
+  position: absolute
+  bottom: 20%
+  left: 15%
+  &:hover .border
+    top: 0px
+    background: $black
+    transition: .4s
+  &:hover .rect
+    background: $black
+    border: 1px solid $black
+    transition: .3s
+.border
+  position: absolute
+  top: -30px
+  left: 0
+  display: block
+  height: 1px
+  width: 60px
+  background: $gray
+  transform: rotate(90deg)
+  transition: .3s
+.rect
+  position: absolute
+  top: 20px
+  left: 20px
+  display: block
+  width: 20px
+  height: 20px
+  border: 1px solid $gray
+  transform: rotate(45deg) 
+  transition: .3s

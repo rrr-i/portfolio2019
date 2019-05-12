@@ -1,0 +1,100 @@
+header
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translate(-50%,0)
+  background: none
+  width: 100%
+  max-width: 1160px
+  animation: Headerindex 1s ease-in 0s forwards
+  opacity: 0
+  .header-inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 32.5px 0
+  h1
+    display: flex
+    align-items: center
+    text-align: center
+    transition: .6s
+    &:hover
+      transition: .3s
+      cursor: pointer  
+    img
+      width: 50px
+      border-radius: 50%
+      margin-right: 10px
+    p
+      font-size: .8em
+      letter-spacing: .3em
+      transition: .3s
+      font-weight: normal
+    &:hover p
+      color: $black
+      transition: .3s
+  nav,.clicked
+    position: relative
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    box-shadow: 0 0 0 0 $black
+    transition: 1s
+    &:hover
+      cursor: pointer  
+    .humberger
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 30px
+      line-height: 10px
+    .humberger-border
+      width: 30px
+      height: 4px
+      margin: 0 auto 4px
+      border: 1px solid $gray
+      &:last-child
+        margin: 0 auto
+  .clicked
+    box-shadow: 0 0 0 3000px $black
+    transition: 2s
+.menu-box
+  width: 80%
+  max-width: 1000px
+  height: 100vh
+  margin: 0 auto
+  opacity: 0
+  display: none
+  .menu
+    position: absolute
+    top: 40%
+    left: 50%
+    transform: translate(-50%,-50%)
+    display: flex
+    li
+      text-align: center
+      &:first-child
+        margin-right: 20px
+      &:hover
+        border-radius: 50%
+    a
+      display: block
+      width: 100px
+      line-height: 100px
+      background: transparent
+      color: $white
+      border: 1px solid $white
+      text-decoration: none
+      transition: 1s
+      &:hover
+        background: $white
+        color: $black
+        border-radius: 50%
+        transition: .3s
+.menu-box-visible
+  position: relative
+  opacity: 1
+  display: block
+  animation: menuvisible 1.3s ease-in 0s forwards
+  z-index: 1000

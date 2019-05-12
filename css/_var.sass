@@ -1,0 +1,71 @@
+$white: #f2f2f2
+$black: #393332
+$gray: #B5B5B6
+
+@font-face
+  font-family: "sunn"
+  src: url(../font/BwVivant-Medium.otf)
+
+@keyframes Headerindex
+  0%
+    opacity: 0
+    z-index: 0
+  100%
+    opacity: 1
+    z-index: 999
+
+
+@keyframes DASH
+  0%
+    stroke-dashoffset: 2000
+  28%
+    fill: transparent
+    stroke-width: .8px
+  50%
+    fill: transparent
+  70%
+    fill: $black
+    stroke-width: .8px
+  100%
+    fill: $black
+    stroke-width: 0px
+    stroke-dashoffset: 0
+
+@keyframes rect
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+    
+@keyframes Dotted
+  0%
+    stroke-dashoffset: 1000
+    fill: transparent
+    stroke-width: .8px
+  50%
+    fill: transparent
+    stroke-width: .8px
+  100%
+    stroke-dashoffset: 0
+    stroke-width: 0px
+    fill: $gray
+
+@keyframes menuvisible
+  0%
+    display: none
+    opacity: 0
+  50%
+    display: block
+    opacity: 0
+  100%
+    display: block
+    opacity: 1
+
+*
+  box-sizing: border-box
+  list-style-type: none
+  -webkit-overflow-scrolling: touch
+  
+body
+  // font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif
+  font-family: YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic','ＭＳ ゴシック','Helvetica Neue','Helvetica','Arial',sans-serif

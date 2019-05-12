@@ -1,0 +1,119 @@
+#gallery
+  position: relative
+  width: 100vw
+  height: auto
+  section
+    position: relative
+    width: 100%
+    height: 100%
+    box-sizing: border-box
+    .filter
+      display: flex
+      justify-content: space-between
+      width: 50%
+      max-width: 800px
+      min-width: 600px
+      margin: -100px auto 0
+      padding: 100px 0 0 0
+      @media screen and (max-width: 768px)
+        max-width: inherit
+        min-width: inherit
+        width: 90%
+      @media screen and (max-width: 500px)
+        justify-content: space-between
+        flex-wrap: wrap
+      button
+        width: 120px
+        padding: 5px 0
+        color: $black
+        background: rgba(255,255,255,0)
+        letter-spacing: .1em
+        font-size: 1em
+        border: none
+        cursor: pointer
+        outline: none
+        transition: .4s
+        @media screen and (max-width: 768px)
+          width: 20%
+          padding: 8px 0
+          font-size: .9em
+        @media screen and (max-width: 500px)
+          width: 20%
+          margin-bottom: 10px
+          font-size: .7em
+    h2
+      font-size: 1.4em
+      font-family: "sunn"
+      line-height: 1.6em
+      letter-spacing: .15em
+      text-align: center
+      color: $black
+      @media screen and (max-width: 450px)
+        padding-top: 70px
+        font-size: 1.6em
+    .flex-box
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      justify-content: flex-start
+      width: 1160px
+      height: auto
+      margin: 0 auto
+      padding: 50px 0 0 0
+      box-sizing: border-box
+      @media screen and (max-width: 1180px)
+        width: 750px
+      @media screen and (max-width: 768px)
+        width: 450px
+      @media screen and (max-width: 450px)
+        width: 310px
+    .gallery-content
+      width: 290px
+      margin-bottom: 65px
+      text-align: center
+      transition: .2s
+      @media screen and (max-width: 1180px)
+        width: 50%
+      @media screen and (max-width: 768px)
+        width: 45%
+        &:nth-child(odd)
+          margin-right: 10%
+      @media screen and (max-width: 450px)
+        width: 100%
+        margin-bottom: 10px
+        &:nth-child(odd)
+          margin-right: 0px
+      &:hover
+        filter: grayscale(0%)
+        transition: .3s
+      @media screen and (max-width: 768px)
+        &:hover
+          transform: none
+          transition: none
+      a
+        display: block
+        width: 225px
+        height: 225px
+        margin: 0 auto
+        @media screen and (max-width: 768px)
+          width: 100%
+        @media screen and (max-width: 450px)
+          width: 225px
+      img
+        width: 225px
+        height: 225px
+        text-align: center
+        object-fit: contain
+        @media screen and (max-width: 768px)
+          width: 100%
+        @media screen and (max-width: 450px)
+          width: 225px
+  .bottom-hide
+    position: fixed
+    bottom: 0
+    width: 100%
+    height: 30px
+    background: $white
+    z-index: 100
+    @media screen and (max-width: 450px)
+      display: none
