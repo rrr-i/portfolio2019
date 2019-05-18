@@ -90,18 +90,12 @@ input, select {
   vertical-align: middle;
 }
 
-@font-face {
-  font-family: "sunn";
-  src: url(../font/BwVivant-Medium.otf);
-}
 @keyframes Headerindex {
   0% {
     opacity: 0;
-    z-index: 0;
   }
   100% {
     opacity: 1;
-    z-index: 999;
   }
 }
 @keyframes DASH {
@@ -110,14 +104,15 @@ input, select {
   }
   28% {
     fill: transparent;
-    stroke-width: 0.8px;
+    stroke-width: 0.5px;
   }
   50% {
     fill: transparent;
+    stroke-width: 0.5px;
   }
   70% {
     fill: #393332;
-    stroke-width: 0.8px;
+    stroke-width: 0px;
   }
   100% {
     fill: #393332;
@@ -137,16 +132,20 @@ input, select {
   0% {
     stroke-dashoffset: 1000;
     fill: transparent;
-    stroke-width: 0.8px;
+    stroke-width: 0.5px;
   }
   50% {
     fill: transparent;
-    stroke-width: 0.8px;
+    stroke-width: 0.5px;
+  }
+  70% {
+    fill: transparent;
+    stroke-width: 0.5px;
   }
   100% {
     stroke-dashoffset: 0;
     stroke-width: 0px;
-    fill: #B5B5B6;
+    fill: #f2f2f2;
   }
 }
 @keyframes menuvisible {
@@ -163,12 +162,24 @@ input, select {
     opacity: 1;
   }
 }
+@keyframes moveY {
+  0% {
+    top: -30px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 * {
   box-sizing: border-box;
   list-style-type: none;
   -webkit-overflow-scrolling: touch;
 }
 
+@font-face {
+  font-family: "bizon";
+  src: url(../font/Bison-Bold.ttf);
+}
 body {
   font-family: YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -204,16 +215,6 @@ header h1 img {
   width: 50px;
   border-radius: 50%;
   margin-right: 10px;
-}
-header h1 p {
-  font-size: 0.8em;
-  letter-spacing: 0.3em;
-  transition: 0.3s;
-  font-weight: normal;
-}
-header h1:hover p {
-  color: #393332;
-  transition: 0.3s;
 }
 header nav, header .clicked {
   position: relative;
@@ -324,7 +325,7 @@ main #first-view {
   position: relative;
   width: 100vw;
   height: 100vh;
-  min-height: 600px;
+  min-height: 800px;
 }
 main .first-view-bg {
   position: relative;
@@ -332,33 +333,25 @@ main .first-view-bg {
   height: 100%;
 }
 main .first-view-bg svg {
-  position: absolute;
+  position: fixed;
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.5%, -50.5%);
   opacity: 0;
+  animation: rect 1s ease-in 0s forwards;
 }
-main .first-view-bg svg:nth-child(1) {
-  top: 500px;
-  left: 25%;
-  animation: rect 2s ease-in 3s forwards;
-}
-main .first-view-bg svg:nth-child(2) {
-  top: 280px;
-  left: 49%;
-  animation: rect 2s ease-in 3.4s forwards;
-}
-main .first-view-bg svg:nth-child(3) {
-  top: 110px;
-  left: 75%;
-  animation: rect 3s ease-in 4s forwards;
-}
-main .first-view-bg svg:nth-child(4) {
-  top: 70px;
-  left: 80%;
-  animation: rect 2s ease-in 4.6s forwards;
+main .first-view-bg svg:nth-child(2) rect {
+  top: unset;
+  bottom: 0;
+  left: unset;
+  right: 0;
+  transform: translate(0%, 50%);
 }
 main .section-wrap {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  max-width: 200px;
+  max-width: 350px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -366,17 +359,18 @@ main .section-wrap {
 }
 main .section-wrap svg {
   width: 100%;
-  animation: DASH 4.4s ease-in 0s forwards;
+  animation: DASH 4.4s ease-in 2s forwards;
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
-  stroke-width: 0.8px;
+  stroke-width: 0.5px;
   stroke: #393332;
   fill: transparent;
   overflow: visible;
 }
 main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
+  stroke: #f2f2f2;
   fill: transparent;
-  animation: Dotted 2s ease-in 1.2s forwards;
+  animation: Dotted 2.4s ease-in 1.2s forwards;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
 }
@@ -407,6 +401,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   background: #B5B5B6;
   transform: rotate(90deg);
   transition: 0.3s;
+  animation: moveY 3s infinite alternate linear;
 }
 
 .rect {
@@ -845,6 +840,62 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   background: rgba(57, 51, 50, 0.8);
   z-index: 1001;
   cursor: pointer;
+}
+
+#profile {
+  width: 1080px;
+  margin: 100px auto 0;
+}
+#profile .profile-img {
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+#profile .profile-img img {
+  width: 250px;
+  position: relative;
+  z-index: 1;
+}
+#profile .profile-img .school {
+  position: absolute;
+  top: -0.45em;
+  left: -1.85em;
+  color: #B5B5B6;
+  font-size: 3.8em;
+  font-weight: bold;
+  line-height: 0.4em;
+  letter-spacing: 0.1em;
+  word-break: break-all;
+  font-family: "bizon";
+}
+#profile .profile-img .schoolname {
+  margin: 0 0 0 -1em;
+  font-size: 14px;
+  font-weight: bold;
+}
+#profile .profile-img .name {
+  position: absolute;
+  top: 4em;
+  right: -2.7em;
+  color: #393332;
+  font-size: 3.4em;
+  font-weight: bold;
+  line-height: 0.4em;
+  letter-spacing: 0.1em;
+  transform: rotate(90deg);
+  z-index: 2;
+  font-family: "bizon";
+}
+#profile .skills ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  margin: 50px auto;
+}
+#profile .skills ul img {
+  width: 60px;
 }
 
 footer {

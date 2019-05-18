@@ -2,17 +2,11 @@ $white: #f2f2f2
 $black: #393332
 $gray: #B5B5B6
 
-@font-face
-  font-family: "sunn"
-  src: url(../font/BwVivant-Medium.otf)
-
 @keyframes Headerindex
   0%
     opacity: 0
-    z-index: 0
   100%
     opacity: 1
-    z-index: 999
 
 
 @keyframes DASH
@@ -20,12 +14,13 @@ $gray: #B5B5B6
     stroke-dashoffset: 2000
   28%
     fill: transparent
-    stroke-width: .8px
+    stroke-width: .5px
   50%
     fill: transparent
+    stroke-width: .5px
   70%
     fill: $black
-    stroke-width: .8px
+    stroke-width: 0px
   100%
     fill: $black
     stroke-width: 0px
@@ -41,14 +36,17 @@ $gray: #B5B5B6
   0%
     stroke-dashoffset: 1000
     fill: transparent
-    stroke-width: .8px
+    stroke-width: .5px
   50%
     fill: transparent
-    stroke-width: .8px
+    stroke-width: .5px
+  70%
+    fill: transparent
+    stroke-width: .5px
   100%
     stroke-dashoffset: 0
     stroke-width: 0px
-    fill: $gray
+    fill: $white
 
 @keyframes menuvisible
   0%
@@ -61,11 +59,22 @@ $gray: #B5B5B6
     display: block
     opacity: 1
 
+@keyframes moveY
+  0%
+    top: -30px
+  100%
+    top: 0px
+
+
 *
   box-sizing: border-box
   list-style-type: none
   -webkit-overflow-scrolling: touch
   
+@font-face
+  font-family: "bizon"
+  src: url(../font/Bison-Bold.ttf)
+
 body
   // font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif
   font-family: YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic','ＭＳ ゴシック','Helvetica Neue','Helvetica','Arial',sans-serif
