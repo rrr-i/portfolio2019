@@ -93,24 +93,22 @@ input, select {
 @keyframes Headerindex {
   0% {
     opacity: 0;
+    z-index: 0;
   }
   100% {
     opacity: 1;
+    z-index: 999;
   }
 }
 @keyframes DASH {
   0% {
     stroke-dashoffset: 2000;
   }
-  28% {
+  30% {
     fill: transparent;
     stroke-width: 0.5px;
   }
   50% {
-    fill: transparent;
-    stroke-width: 0.5px;
-  }
-  70% {
     fill: #393332;
     stroke-width: 0px;
   }
@@ -134,18 +132,18 @@ input, select {
     fill: transparent;
     stroke-width: 0.5px;
   }
-  50% {
+  30% {
     fill: transparent;
     stroke-width: 0.5px;
   }
-  70% {
-    fill: transparent;
+  50% {
+    fill: #393332;
     stroke-width: 0.5px;
   }
   100% {
     stroke-dashoffset: 0;
     stroke-width: 0px;
-    fill: #f2f2f2;
+    fill: #393332;
   }
 }
 @keyframes menuvisible {
@@ -327,27 +325,6 @@ main #first-view {
   height: 100vh;
   min-height: 800px;
 }
-main .first-view-bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-main .first-view-bg svg {
-  position: fixed;
-  max-width: 500px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50.5%, -50.5%);
-  opacity: 0;
-  animation: rect 1s ease-in 0s forwards;
-}
-main .first-view-bg svg:nth-child(2) rect {
-  top: unset;
-  bottom: 0;
-  left: unset;
-  right: 0;
-  transform: translate(0%, 50%);
-}
 main .section-wrap {
   position: fixed;
   width: 100%;
@@ -359,7 +336,7 @@ main .section-wrap {
 }
 main .section-wrap svg {
   width: 100%;
-  animation: DASH 4.4s ease-in 2s forwards;
+  animation: DASH 6s ease-in 0.4s forwards;
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
   stroke-width: 0.5px;
@@ -368,9 +345,9 @@ main .section-wrap svg {
   overflow: visible;
 }
 main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
-  stroke: #f2f2f2;
+  stroke: #393332;
   fill: transparent;
-  animation: Dotted 2.4s ease-in 1.2s forwards;
+  animation: Dotted 6s ease-in 0.4s forwards;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
 }
@@ -558,6 +535,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   width: 225px;
   height: 225px;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   #gallery section .gallery-content a {
@@ -569,11 +547,18 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
     width: 225px;
   }
 }
+#gallery section .gallery-content a:hover > img {
+  transform: scale(1.1);
+  filter: brightness(1.05);
+  transition: 0.5s;
+}
 #gallery section .gallery-content img {
   width: 225px;
-  height: 225px;
+  height: 100%;
   text-align: center;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   #gallery section .gallery-content img {

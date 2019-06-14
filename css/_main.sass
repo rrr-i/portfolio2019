@@ -19,24 +19,24 @@ main
     width: 100vw
     height: 100vh
     min-height: 800px
-  .first-view-bg
-    position: relative
-    width: 100%
-    height: 100%
-    svg
-      position: fixed
-      max-width: 500px
-      top: 50%
-      left: 50%
-      transform: translate(-50.5%, -50.5%)
-      opacity: 0
-      animation: rect 1s ease-in 0s forwards
-      &:nth-child(2) rect
-        top: unset
-        bottom: 0
-        left: unset
-        right: 0
-        transform: translate(0%,50%)
+  // .first-view-bg
+  //   position: relative
+  //   width: 100%
+  //   height: 100%
+  //   svg
+  //     position: fixed
+  //     max-width: 500px
+  //     top: 50%
+  //     left: 50%
+  //     transform: translate(-50.5%, -50.5%)
+  //     opacity: 0
+  //     animation: rect 1s ease-in 0s forwards
+  //     &:nth-child(2) rect
+  //       top: unset
+  //       bottom: 0
+  //       left: unset
+  //       right: 0
+  //       transform: translate(0%,50%)
   .section-wrap
     position: fixed
     width: 100%
@@ -47,7 +47,7 @@ main
     overflow: visible
     svg
       width: 100%
-      animation: DASH 4.4s ease-in 2s forwards
+      animation: DASH 6s ease-in .4s forwards
       stroke-dasharray: 2000
       stroke-dashoffset: 2000
       stroke-width: .5px
@@ -55,9 +55,9 @@ main
       fill: transparent
       overflow: visible
       path:nth-child(n+5):nth-child(-n+8) 
-        stroke: $white
+        stroke: $black
         fill: transparent
-        animation: Dotted 2.4s ease-in 1.2s forwards
+        animation: Dotted 6s ease-in .4s forwards
         stroke-dasharray: 1000
         stroke-dashoffset: 1000
 .arrow
