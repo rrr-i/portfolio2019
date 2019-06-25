@@ -33,48 +33,7 @@ html(lang="ja")
               button(value="graphic") GRAPHIC
               button(value="web") WEB
             .flex-box
-                .gallery-content.dtp
-                  a(href="./gallery/DTP1.html")
-                    img(src="./images/DTP1.png", alt="")
-                .gallery-content.graphic
-                  a(href="./gallery/dvd-poster.html")
-                    img(src="./images/DVD-Poster.jpg", alt="")
-                .gallery-content.graphic
-                  a(href="./gallery/dvd.html")
-                    img(src="./images/DVD.png", alt="")
-                .gallery-content.web
-                  a(href="./gallery/gakublo.html")
-                    img(src="./images/gakublo.png", alt="")
-                .gallery-content.graphic
-                  a(href="./gallery/mondrian.html")
-                    img(src="./images/mondrian.png", alt="")
-                .gallery-content.web
-                  a(href="../kadai07/index.html")
-                    img(src="./images/web-bragi.png", alt="")
-                .gallery-content.dtp
-                  a(href="./gallery/DTP2.html")
-                    img(src="./images/DTP2.png", alt="")
-                .gallery-content.graphic
-                  a(href="./gallery/portrait.html")
-                    img(src="./images/portrait.png", alt="")
-                .gallery-content.web
-                  a(href="../kadai09/html/index.html")
-                    img(src="./images/web-oneokrock.png", alt="")
-                .gallery-content.graphic
-                  a(href="./gallery/culogo.html")
-                    img(src="./images/CU_logo.jpg", alt="")
-                .gallery-content.web
-                  a(href="../kadai07_2/index.html")
-                    img(src="./images/web-fiat.png", alt="")
-                .gallery-content.graphic
-                  a(href="./gallery/niigata-logo.html")
-                    img(src="./images/niigata_logo.png", alt="")
-                .gallery-content.web
-                  a(href="../kadai05/index.html")
-                    img(src="./images/web-nikoand.png", alt="")
-                .gallery-content.web
-                  a(href="../nipponsakaba/index.html")
-                    img(src="./images/web-nipponsakaba.png", alt="")
+              include ./pug/gallery_import
         #profile
           .profile-img
             p.school GRAPHIC DESIGN
@@ -85,13 +44,12 @@ html(lang="ja")
             p.name FUNATSU RIKI
           .skills
             ul
-              //- li: img(src="./images/illustrator.png", alt="")
-              //- li: img(src="./images/indesign.png", alt="")
-              //- li: img(src="./images/photoshop.png", alt="")
-              //- li: img(src="./images/xd.png", alt="")
-              //- li: img(src="./images/dreamweavar.png", alt="")
-              //- li: img(src="./images/lightroom.png", alt="")
-          
+              li: img(src="./images/illustrator.png", alt="")
+              li: img(src="./images/indesign.png", alt="")
+              li: img(src="./images/photoshop.png", alt="")
+              li: img(src="./images/xd.png", alt="")
+              li: img(src="./images/dreamweavar.png", alt="")
+              li: img(src="./images/lightroom.png", alt="")
           
       footer
         p &copy; 2019 Riki F.

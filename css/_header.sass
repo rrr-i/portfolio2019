@@ -46,11 +46,17 @@ header
       height: 4px
       margin: 0 auto 4px
       border: 1px solid $gray
-      &:last-child
-        margin: 0 auto
+      transform-origin: center
+      transition: .3s
   .clicked
     box-shadow: 0 0 0 3000px $black
     transition: 2s
+.humberger-border:first-child.active
+  transform: rotate(-45deg) translateX(-5px)
+  transition: .3s
+.humberger-border:last-child.active
+  transform: rotate(45deg) translateX(-5px)
+  transition: .3s
 .menu-box
   width: 80%
   max-width: 1000px

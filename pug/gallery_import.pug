@@ -1,0 +1,77 @@
+-  
+  var list = [
+    {
+    class: "dtp",
+    href: "DTP1.html",
+    img : "DTP1.png"
+    },
+    {
+    class: "graphic",
+    href: "dvd-poster.html",
+    img : "DVD-Poster.jpg"
+    },
+    {
+    class: "graphic",
+    href: "dvd.html",
+    img : "DVD.png"
+    },
+    {
+    class: "web",
+    href: "gakublo.html",
+    img : "gakublo.png"
+    },
+    {
+    class: "graphic",
+    href: "mondrian.html",
+    img : "mondrian.png"
+    },
+    {
+    class: "web",
+    href: "DTP1.html",
+    img : "web-bragi.png"
+    },
+    {
+    class: "dtp",
+    href: "DTP1.html",
+    img : "DTP2.png"
+    },
+    {
+    class: "graphic",
+    href: "DTP1.html",
+    img : "portrait.png"
+    },
+    {
+    class: "dtp",
+    href: "DTP1.html",
+    img : "web-oneokrock.png"
+    },
+    {
+    class: "graphic",
+    href: "DTP1.html",
+    img : "CU_logo.jpg"
+    },
+    {
+    class: "web",
+    href: "DTP1.html",
+    img : "web-fiat.png"
+    },
+    {
+    class: "graphic",
+    href: "DTP1.html",
+    img : "niigata_logo.png"
+    },
+    {
+    class: "web",
+    href: "DTP1.html",
+    img : "web-nikoand.png"
+    },
+    {
+    class: "web",
+    href: "DTP1.html",
+    img : "web-nipponsakaba.png"
+    }
+  ]
+each item, index in list
+  div(class='gallery-content '+ item['class'])
+    a(href= './gallery/' +item['href'])
+      img(src='./images/' + item['img'], alt="")

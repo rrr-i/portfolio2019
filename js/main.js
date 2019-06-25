@@ -4,7 +4,6 @@
 document.querySelector(".header-inner nav").addEventListener('click', function(ev){
   document.querySelector('.header-inner nav').classList.toggle('clicked');
   document.querySelector('body').classList.toggle('hidden');
-  document.querySelector('.humberger-border').classList.toggle('active');
   document.querySelector('.menu-box').classList.toggle('menu-box-visible');
 });
 
@@ -17,6 +16,11 @@ document.querySelector(".header-inner nav").addEventListener('click', function(e
 // });
 
 $(function () {
+
+
+  $("nav").on("click",function(){
+    $(".humberger-border").toggleClass("active");
+  });
 
   $(window).scroll(function(){
     if($(this).scrollTop() > $(window).height() - 500){
