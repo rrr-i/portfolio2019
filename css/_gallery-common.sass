@@ -129,8 +129,11 @@
   @media screen and (max-width: 450px)
     left: 50%
   img
-    max-height: 80vh
-    width: auto
+    height: auto
+    max-width: 70vw
+    @media screen and (max-width: 768px)
+      max-height: inherit
+      max-width: 80vw
 #bg
   display: none
   position: fixed

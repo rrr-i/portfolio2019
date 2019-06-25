@@ -820,8 +820,14 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   }
 }
 #photo img {
-  max-height: 80vh;
-  width: auto;
+  height: auto;
+  max-width: 70vw;
+}
+@media screen and (max-width: 768px) {
+  #photo img {
+    max-height: inherit;
+    max-width: 80vw;
+  }
 }
 
 #bg {
