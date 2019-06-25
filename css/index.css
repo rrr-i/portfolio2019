@@ -343,6 +343,11 @@ main .section-wrap {
   transform: translate(-50%, -50%);
   overflow: visible;
 }
+@media screen and (max-width: 768px) {
+  main .section-wrap {
+    max-width: 200px;
+  }
+}
 main .section-wrap svg {
   width: 100%;
   animation: DASH 6s ease-in 0.4s forwards;
@@ -571,12 +576,14 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 }
 @media screen and (max-width: 768px) {
   #gallery section .gallery-content img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 450px) {
   #gallery section .gallery-content img {
-    width: 225px;
+    width: 180px;
+    height: 180px;
   }
 }
 #gallery .bottom-hide {
