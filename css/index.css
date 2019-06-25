@@ -826,7 +826,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 @media screen and (max-width: 768px) {
   #photo img {
     max-height: inherit;
-    max-width: 100%;
+    max-width: 80vw;
   }
 }
 
