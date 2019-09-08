@@ -7,39 +7,15 @@ document.querySelector(".header-inner nav").addEventListener('click', function(e
   document.querySelector('.menu-box').classList.toggle('menu-box-visible');
 });
 
-// window.addEventListener('scroll',function(event){
-//   if(window.pageYOffset > window.outerHeight - 150){
-//     document.querySelector('.header-inner img').style.opacity = ".5";
-//   }else{
-//     document.querySelector('.header-inner img').style.opacity = "1";
-//   }
-// });
-
 $(function () {
-
-
-  $("nav").on("click",function(){
-    $(".humberger-border").toggleClass("active");
-  });
 
   $(window).scroll(function(){
     if($(this).scrollTop() > $(window).height() - 500){
       $(".header-inner img").css("opacity",".5");
-      $(".section-wrap svg").fadeOut(400);
     }else{
       $(".header-inner img").css("opacity","1");
-      $(".section-wrap svg").stop().fadeIn(600);
     };
 
-    var scrolled = $(window).scrollTop();
-    $(".first-view-bg svg:nth-child(1)").css({
-      top: 50 - scrolled * 0 + "%",
-      left: 50 + scrolled * 0.15 + "%"
-    });
-    $(".first-view-bg svg:nth-child(2)").css({
-      top: 50 - scrolled * 0 + "%",
-      left: 50 - scrolled * 0.15 + "%"
-    });
   });
 
   $(".main-img a, .main-img-tate a").on("click",function(){
