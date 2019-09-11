@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@keyframes fadein {
+ 0% {
+opacity: 0
+}
+ 100% {
+opacity: 1
+}
+}
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	text-decoration: none;
+}
+html, body, #wrapper {
+	height: auto;
+	width: 100vw;
+	background: url(../overlays/05.png) rgba(60,60,60,1.00);
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	-ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+    display: none; }
+body {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	animation: fadein 2s ease normal;
+}
+#header {
+	width: 90vw;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+#nav {
+	height: 100px;
+}
+#header h1 {
+	float: left;
+}
+#nav ul {
+	float: right;
+	padding: 20px 0 0 0;
+}
+#nav li {
+	display: inline-block;
+	text-align: center;
+	font-size: 1em;
+	margin: 0 40px 0 0;
+	letter-spacing: 3px;
+	transition: all 1.4s ease;
+}
+#nav li:nth-child(3) {
+	margin: 0;
+}
+#nav li a {
+	display: block;
+	color: rgba(255,255,255,1.00);
+	line-height: 50px;
+}
+#nav li:hover {
+	transform: scale(1.1);
+	transition: all 0.7s ease;
+}
+#nav li:after {
+	content: '';
+	width: 0%;
+	transition: all 1.8s ease;
+	border-bottom: solid 2px #fff;
+	display: block;
+}
+#nav li:hover:after {
+	width: 100%;
+	transition: all 0.7s ease;
+	border-bottom: solid 2px #FCFF22;
+}

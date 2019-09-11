@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#main {
+	width: 100vw;
+	height: auto;
+	margin: 0 auto;
+}
+#top {
+	margin-top: 4vh;
+}
+@keyframes animation {
+ 0% {
+transform: translateY(0)
+}
+ 50% {
+transform: translateY(25px)
+}
+ 100% {
+transform: translateY(0)
+}
+}
+.josefin {
+	font-size: 6vw;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	letter-spacing: 6px;
+	font-weight: 800;
+	background: linear-gradient(150deg, #FDF028 20%, #7828FD);
+	color: rgba(0,0,0,0.00);
+	-webkit-background-clip: text;
+	animation: animation 3s ease-in-out infinite;
+}
+#grid {
+	width: 70vw;
+	margin: 150px auto 100px;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 250px);
+	grid-template-rows: 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px;
+	grid-row-gap: 80px;
+	grid-column-gap: 120px;
+}
+#grid_content {
+	border-radius: 6px;
+	display: block;
+	overflow: hidden;
+	transition: 0.2s;
+}
+#grid_content:hover {
+	transition: 0.2s;
+	filter: brightness(0.8);
+	transform: scale(1.15);
+}
+#caption {
+	display: block;
+	width: 100%;
+	height: 100px;
+	margin-top: 350px;
+	background: rgba(240,240,240,0.90);
+	transition: 0.2s;
+	border-radius: 0 0 6px 6px;
+	letter-spacing: 1.1px;
+	text-shadow: 0 1px 2px #ACACAC;
+	padding: 5px 10px 0 10px;
+}
+#caption a {
+	color: rgba(30,30,30,1.00);
+}
+#caption a:hover {
+	text-decoration: underline;
+}
+#caption p {
+	font-size: 12.5px;
+	line-height: 1.5;
+}
+.day {
+	color: rgba(78,78,78,1.00);
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 2.5;
+}
+.new:before {
+	content: "NEW!";
+	background: rgba(255,85,88,1.00);
+	padding: 5px;
+	border-radius: 4px;
+	color: rgba(255,255,255,1.00);
+	font-size: 8px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin: 0 5px 0 0;
+}
+#grid_content:hover > #caption {
+	display: block;
+	margin-top: 250px;
+	transition: 0.4s;
+}
+.grid_1 {
+	background: url(../image/news_9.jpg) center center;
+	background-size: cover;
+}
+.grid_2 {
+	background: url(../image/news_8.jpg) center center;
+	background-size: cover;
+}
+.grid_3 {
+	background: url(../image/news_7.png) center center;
+	background-size: cover;
+}
+.grid_4 {
+	background: url(../image/news_1.png) center center;
+	background-size: cover;
+}
+.grid_5 {
+	background: url(../image/news_8.jpg) center center;
+	background-size: cover;
+}
+.grid_6 {
+	background: url(../image/dvd_3.jpg) center center;
+	background-size: cover;
+}
+.grid_7 {
+	background: url(../image/news_2.jpg) center center;
+	background-size: cover;
+}
+.grid_8 {
+	background: url(../image/album_1.jpg) center center;
+	background-size: cover;
+}
+.grid_10 {
+	background: url(../image/news_10.jpg) center center;
+	background-size: cover;
+}
+.grid_11 {
+	background: url(../image/news_11.jpg) center center;
+	background-size: cover;
+}
+.grid_12 {
+	background: url(../image/news_12.jpg) center center;
+	background-size: cover;
+}
+.grid_12 {
+	background: url(../image/news_12.jpg) center center;
+	background-size: cover;
+}
+.grid_13 {
+	background: url(../image/news_13.jpg) center center;
+	background-size: cover;
+}
+.grid_14 {
+	background: url(../image/news_14.png) center center;
+	background-size: cover;
+}
+.grid_15 {
+	background: url(../image/news_15.jpg) center center;
+	background-size: cover;
+}
+.grid_16 {
+	background: url(../image/news_16.jpg) center center;
+	background-size: cover;
+}
+.grid_17 {
+	background: url(../image/news_17.jpg) center center;
+	background-size: cover;
+}
+.grid_18 {
+	background: url(../image/news_18.jpg) center center;
+	background-size: cover;
+}
+.grid_19 {
+	background: url(../image/news_19.jpg) center center;
+	background-size: cover;
+}
+.grid_20 {
+	background: url(../image/news_20.jpg) center center;
+	background-size: cover;
+}
+.grid_21 {
+	background: url(../image/news_21.jpg) center center;
+	background-size: cover;
+}
+.grid_22 {
+	background: url(../image/news_22.jpg) center center;
+	background-size: cover;
+}
+.grid_23 {
+	background: url(../image/news_23.jpg) center center;
+	background-size: cover;
+}
+.grid_24 {
+	background: url(../image/news_24.jpg) center center;
+	background-size: cover;
+}
+.grid_25 {
+	background: url(../image/news_25.jpg) center center;
+	background-size: cover;
+}
+.grid_26 {
+	background: url(../image/news_26.jpg) center center;
+	background-size: cover;
+}
+.grid_27 {
+	background: url(../image/news_27.jpg) center center;
+	background-size: cover;
+}
+.grid_28 {
+	background: url(../image/news_28.jpg) center center;
+	background-size: cover;
+}
+.grid_29 {
+	background: url(../image/news_29.jpg) center center;
+	background-size: cover;
+}
+.grid_30 {
+	background: url(../image/news_30.jpg) center center;
+	background-size: cover;
+}
+.grid_31 {
+	background: url(../image/news_31.jpg) center center;
+	background-size: cover;
+}
+.pt {
+	margin: 0 auto 50px;
+	text-align: center;
+	width: 130px;
+	font-size: 16px;
+	letter-spacing: 1.2px;
+	background: rgba(233,226,49,0.45);
+	border-radius: 6px;
+}
+.pt a {
+	display: block;
+	color: rgba(40,40,40,1.00);
+	line-height: 50px;
+	font-weight: 700;
+}
+.pt a:hover {
+	background: rgba(233,226,49,0.80);
+	border-radius: 6px;
+	transition: 0.4s;
+	box-shadow: 0px 3px 8px -2px rgba(255,255,255,0.75);
+}
+.pt a:active {
+	background: rgba(133,129,29,0.80);
+		box-shadow: 0px 3px 8px -2px rgba(0,0,0,0.75) inset;
+}
