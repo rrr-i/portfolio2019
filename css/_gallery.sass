@@ -94,15 +94,16 @@
         margin: 0 auto
         overflow: hidden
         filter: grayscale(200%) contrast(1.1) brightness(.95)
+        border-radius: 20px
         @media screen and (max-width: 768px)
           width: 100%
         @media screen and (max-width: 450px)
           width: 225px
         &:hover
-          filter: grayscale(0%)
+          filter: grayscale(40%)
           transition: .3s
         &:hover > img
-          transform: scale(1.05)
+          transform: scale(.95)
           transition: .5s
       img
         width: 225px
@@ -111,6 +112,7 @@
         object-fit: cover
         object-position: top
         transition: .3s
+        border-radius: 20px
         @media screen and (max-width: 768px)
           width: 200px
           heightgit: 200px

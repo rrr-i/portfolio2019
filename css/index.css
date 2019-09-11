@@ -625,6 +625,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   overflow: hidden;
   -webkit-filter: grayscale(200%) contrast(1.1) brightness(0.95);
           filter: grayscale(200%) contrast(1.1) brightness(0.95);
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -640,15 +641,15 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 }
 
 #gallery section .gallery-content a:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 #gallery section .gallery-content a:hover > img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -663,6 +664,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
      object-position: top;
   -webkit-transition: .3s;
   transition: .3s;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -858,7 +860,8 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 #gallery-common .gallery-common-top .gallery-img-caption h3,
 #gallery-common .gallery-common-top .gallery-img-caption-tate h3 {
-  margin-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
   font-size: 1.8em;
 }
 
@@ -873,6 +876,28 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 #gallery-common .gallery-common-top .gallery-img-caption-tate h3 a {
   color: #393332;
   text-decoration: none;
+}
+
+#gallery-common .gallery-common-top .gallery-img-caption h3 a::after,
+#gallery-common .gallery-common-top .gallery-img-caption-tate h3 a::after {
+  content: "ページを開く";
+  display: block;
+  padding: 5px 5px 3px 5px;
+  background: #B5B5B6;
+  color: #f2f2f2;
+  font-size: .6em;
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#gallery-common .gallery-common-top .gallery-img-caption h3 a:hover::after,
+#gallery-common .gallery-common-top .gallery-img-caption-tate h3 a:hover::after {
+  background: #393332;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #gallery-common .gallery-common-top .gallery-img-caption ul,
@@ -910,7 +935,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 #gallery-common .gallery-common-top .gallery-img-caption ul img,
 #gallery-common .gallery-common-top .gallery-img-caption-tate ul img {
-  width: 50px;
+  width: 40px;
   vertical-align: middle;
 }
 
@@ -1032,6 +1057,9 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   width: 250px;
   position: relative;
   z-index: 1;
+  border-radius: 20px;
+  -webkit-filter: grayscale(100%) contrast(0.8) brightness(1);
+          filter: grayscale(100%) contrast(0.8) brightness(1);
 }
 
 #profile .profile-img .school {
@@ -1055,7 +1083,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 #profile .profile-img .name {
   position: absolute;
-  top: 4em;
+  top: 3em;
   right: -2.7em;
   color: #393332;
   font-size: 3.4em;
