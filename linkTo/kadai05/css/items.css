@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.top_banner {
+  width: 1140px;
+  height: 400px;
+  background: url(../images/img/items_topbanner.jpg) no-repeat top center;
+  background-size: cover;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.sec_01 {
+  width: 1140px;
+  height: auto;
+  margin: 100px auto 0;
+}
+
+.sec_01 h2 {
+  text-align: center;
+  border-bottom: 2px solid #080808;
+  color: #080808;
+  width: 350px;
+  margin: 0 auto;
+  font-size: 1.8em;
+  padding: 0 0 20px 0;
+  -webkit-box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+}
+
+.sec_01 .sec_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1140px;
+  margin: 100px auto 0;
+}
+
+.sec_01 .sec_flex .flex_content {
+  margin: 0 0 50px 0;
+}
+
+.sec_01 .sec_flex .item_box {
+  display: block;
+  position: relative;
+  width: calc(1000px / 4);
+  height: 250px;
+  background: #cacaca;
+}
+
+.sec_01 .sec_flex h3 {
+  font-size: 1.2em;
+  margin: 5px 0 5px 0;
+}
+
+.sec_01 .sec_flex p {
+  color: #4b4b4b;
+  font-size: 1.4em;
+  text-align: right;
+  font-family: "YuGo-Bold";
+}
+
+.sec_01 .sec_flex p::after {
+  content: " +消費税";
+  color: #888888;
+  font-size: 0.4em;
+  font-family: "YuGo-Medium";
+}
+
+.sec_01 .sec_flex .item01 {
+  background: url(../images/item/ボトル01.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item02 {
+  background: url(../images/item/ボトル02.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item03 {
+  background: url(../images/item/ボトル03.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item04 {
+  background: url(../images/item/ボトル04.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item05 {
+  background: url(../images/item/coffeecup.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item06 {
+  background: url(../images/item/coffeecup2.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item07 {
+  background: url(../images/item/パウチ.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item08 {
+  background: url(../images/item/パウチ.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sec_01 .sec_flex .item09 {
+  background: url(../images/item/coffeecup2.png) no-repeat center center;
+  background-size: cover;
+}
+
+/*sec01 end*/
+.banner_content {
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.banner_content .banner {
+  width: 1000px;
+  height: 125px;
+  background: gray;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.banner_content .banner01 {
+  background: url(../images/img/items_banner.jpg) no-repeat center -70px;
+  background-size: cover;
+}
+
+.banner_content .banner02 {
+  background: url(../images/img/items_banner2.jpg) white no-repeat center center;
+  background-size: contain;
+}
+
+.banner_content .banner03 {
+  background: url(../images/img/campaign_banner.png) no-repeat center -80px;
+  background-size: cover;
+}
+/*# sourceMappingURL=items.css.map */

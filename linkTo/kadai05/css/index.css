@@ -1,0 +1,470 @@
+@charset "UTF-8";
+/* Scss Document */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body #wrap {
+  /*circleanimation*/
+  /*circleanimation end*/
+  /*.top_slider end*/
+  /*header end*/
+  /*main start*/
+}
+
+body #wrap .circle_animation {
+  position: absolute;
+  top: -0.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 1140px;
+  height: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+body #wrap .circle_animation span:nth-child(n+1) {
+  position: absolute;
+  top: -4%;
+  left: 11.5%;
+  -webkit-animation: spin 70s linear infinite;
+          animation: spin 70s linear infinite;
+  width: 850px;
+  height: 850px;
+  border: 12px dotted skyblue;
+  border-radius: 50%;
+}
+
+body #wrap .top_slider {
+  width: 100%;
+  z-index: 10;
+  background: white;
+  position: relative;
+}
+
+body #wrap .top_slider .slider_wrap {
+  position: relative;
+  width: 1140px;
+  height: 550px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #wrap .top_slider .slider_wrap .slideset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+}
+
+body #wrap .top_slider .slider_wrap .slide {
+  display: block;
+  background: url(../images/slider/top_image_1.png);
+  min-width: 1140px;
+  height: 550px;
+}
+
+body #wrap .top_slider .slider_wrap .slide2 {
+  background: url(../images/slider/top_image_2.png);
+  min-width: 1140px;
+  height: 550px;
+}
+
+body #wrap .top_slider .slider_wrap .slide3 {
+  background: url(../images/slider/top_image_3.png);
+  min-width: 1140px;
+  height: 550px;
+}
+
+body #wrap .top_slider .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+body #wrap .top_slider .carousel_button {
+  display: block;
+  background: url(../images/slider/top_image_1.png) no-repeat center center;
+  background-size: cover;
+  width: 100px;
+  height: 50px;
+  z-index: 888;
+  outline: 1px solid #333;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+body #wrap .top_slider .carousel_button:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+body #wrap .top_slider .carousel_button:nth-child(2) {
+  background: url(../images/slider/top_image_2.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap .top_slider .carousel_button:nth-child(3) {
+  background: url(../images/slider/top_image_3.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap .top_slider .carousel_button:hover {
+  opacity: 1;
+}
+
+body #wrap .top_slider .carousel_button .checked {
+  opacity: 1;
+}
+
+body #wrap main {
+  width: 1140px;
+  height: auto;
+  background: white;
+  display: block;
+  margin: 100px auto 0;
+  /*section01 end*/
+  /*sec02end*/
+  /*sec02 end*/
+}
+
+body #wrap main .about {
+  position: relative;
+  text-align: center;
+  font-family: "YuGo-Bold";
+  border: 2px dashed #080808;
+  width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body #wrap main .about p {
+  font-size: 1.1em;
+  margin: 20px 0;
+}
+
+body #wrap main .sec_01 h2, body #wrap main .sec_02 h2, body #wrap main .sec_03 h2 {
+  text-align: center;
+  border-bottom: 2px solid #080808;
+  color: #080808;
+  width: 350px;
+  margin: 0 auto;
+  font-size: 1.8em;
+  padding: 0 0 20px 0;
+  -webkit-box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+}
+
+body #wrap main .sec_01 {
+  position: relative;
+  z-index: 10;
+  margin: 150px 0 0 0;
+}
+
+body #wrap main .sec_01 .companycontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 0 0 0;
+}
+
+body #wrap main .sec_01 .companycontent figure {
+  position: relative;
+}
+
+body #wrap main .sec_01 .companycontent figure img {
+  width: 450px;
+}
+
+body #wrap main .sec_01 .companycontent figure figcaption {
+  text-align: justify;
+  font-size: 0.9em;
+  margin: 20px auto 0;
+  padding: 15px 1em;
+  border-top: 5px dotted #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #wrap main .sec_01 .companycontent figure figcaption span {
+  display: inline-block;
+  height: 100px;
+  margin: 2em 0 0 0;
+  font-size: 0.9em;
+  color: #00aadb;
+}
+
+body #wrap main .sec_01 .companycontent .linkbutton {
+  width: 100%;
+  background: #080808;
+  cursor: pointer;
+  font-family: "YuGo-Bold";
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-align: center;
+}
+
+body #wrap main .sec_01 .companycontent .linkbutton:hover {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 1px solid #00aadb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #wrap main .sec_01 .companycontent .linkbutton:hover > a {
+  color: #00aadb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #wrap main .sec_01 .companycontent .linkbutton a {
+  display: block;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body #wrap main .sec_01 .left_content, body #wrap main .sec_01 .right_content {
+  width: 450px;
+}
+
+body #wrap main .circle_content {
+  margin: 100px auto;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 15px dotted #93d7e9;
+  border-radius: 0%;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+}
+
+body #wrap main .circle02 {
+  margin: 120px 0 0 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 20s linear infinite;
+          animation: spin 20s linear infinite;
+  animation-direction: reverse;
+  border: 10px dotted #dba000;
+}
+
+body #wrap main .sec_02 {
+  width: 1140px;
+  height: auto;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+body #wrap main .sec_02 h2 {
+  text-align: center;
+  border-bottom: 2px solid #080808;
+  color: #080808;
+  width: 350px;
+  margin: 0 auto;
+  font-size: 1.8em;
+  padding: 0 0 20px 0;
+  -webkit-box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+}
+
+body #wrap main .sec_02 .sec_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1000px;
+  margin: 100px auto 0;
+}
+
+body #wrap main .sec_02 .sec_flex .flex_content {
+  margin: 0 0 50px 0;
+}
+
+body #wrap main .sec_02 .sec_flex .item_box {
+  display: block;
+  position: relative;
+  width: calc(960px / 3);
+  height: 350px;
+  background: #cacaca;
+}
+
+body #wrap main .sec_02 .sec_flex h3 {
+  text-align: left;
+  font-size: 1.2em;
+  margin: 10px 0 15px 0;
+}
+
+body #wrap main .sec_02 .sec_flex p {
+  color: #4b4b4b;
+  font-size: 1.4em;
+  text-align: right;
+  font-family: "YuGo-Bold";
+}
+
+body #wrap main .sec_02 .sec_flex p::after {
+  content: " +消費税";
+  color: #888888;
+  font-size: 0.4em;
+  font-family: "YuGo-Medium";
+}
+
+body #wrap main .sec_02 .sec_flex .item01 {
+  background: url(../images/item/ボトル01.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_02 .sec_flex .item02 {
+  background: url(../images/item/ボトル03.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_02 .sec_flex .item03 {
+  background: url(../images/item/coffeecup2.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_02 .sec_flex .item04 {
+  background: url(../images/item/coffeecup.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_02 .sec_flex .item05 {
+  background: url(../images/item/パウチ.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_02 .sec_flex .item06 {
+  background: url(../images/item/パウチ.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_02 .linkbutton {
+  position: relative;
+  width: 300px;
+  background: #080808;
+  cursor: pointer;
+  font-family: "YuGo-Bold";
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 50px auto 0;
+}
+
+body #wrap main .sec_02 .linkbutton:hover {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 1px solid #00aadb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #wrap main .sec_02 .linkbutton:hover > a {
+  color: #00aadb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #wrap main .sec_02 .linkbutton a {
+  display: block;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 50px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body #wrap main .sec_03 {
+  position: relative;
+  z-index: 10;
+}
+
+body #wrap main .sec_03 .campaign_banner {
+  margin: 100px 0 0 0;
+  width: 100%;
+  height: 300px;
+  background: url(../images/img/campaign_banner.png) no-repeat center center;
+  background-size: cover;
+}
+
+body #wrap main .sec_03 figure figcaption {
+  font-size: 0.7em;
+  color: gray;
+}
+
+body #wrap main .sec_03 figure figcaption:before {
+  content: "*";
+  color: red;
+}
+
+body #wrap main .sec_03 .campaign_list {
+  width: 1140px;
+  height: 400px;
+  margin: 100px 0 0 0;
+}
+
+body #wrap main .sec_03 .campaign_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #wrap main .sec_03 .campaign_list ul li {
+  width: 200px;
+  height: 200px;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+body #wrap main .sec_03 .campaign_list ul li .campaign_listimg {
+  display: block;
+  background: #dba000;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=index.css.map */

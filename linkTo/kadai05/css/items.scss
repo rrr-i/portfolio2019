@@ -1,0 +1,125 @@
+$keyscolor:#1e285f;
+$black:#080808;
+$sky:#00aadb;
+$fontM:"YuGo-Medium";
+$fontB:"YuGo-Bold";
+
+.top_banner {
+    width:1140px;
+    height:400px;
+    background: url(../images/img/items_topbanner.jpg) no-repeat top center;
+    background-size: cover;
+    margin:100px auto 0;
+    position: relative;
+}
+.sec_01 {
+    width: 1140px;
+    height:auto;
+    margin:100px auto 0;
+    h2 {
+        text-align: center;
+        border-bottom:2px solid $black;
+        color:$black;
+        width:350px;
+        margin:0 auto;
+        font-size: 1.8em;
+        padding:0 0 20px 0;
+        box-shadow: 0 6px 8px -6px rgba(0,0,0,0.7);
+    }
+    .sec_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width:1140px;
+        margin: 100px auto 0;
+        .flex_content{
+            margin: 0 0 50px 0;
+        }
+        .item_box {
+            display: block;
+            position: relative;
+            width:calc(1000px / 4);
+            height:250px;
+            background:rgb(202, 202, 202);
+        }
+        h3 {
+            font-size:1.2em;
+            margin:5px 0 5px 0;
+        }
+        p {
+            color:#4b4b4b;
+            font-size:1.4em;
+            text-align: right;
+            font-family: $fontB;
+            &::after {
+                content:" +消費税";
+                color:#888888;
+                font-size:0.4em;
+                font-family: $fontM;
+            }
+        }
+        .item01 {
+            background:url(../images/item/ボトル01.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item02 {
+            background:url(../images/item/ボトル02.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item03 {
+            background:url(../images/item/ボトル03.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item04 {
+            background:url(../images/item/ボトル04.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item05 {
+            background:url(../images/item/coffeecup.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item06 {
+            background:url(../images/item/coffeecup2.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item07 {
+            background:url(../images/item/パウチ.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item08 {
+            background:url(../images/item/パウチ.png) no-repeat center center;
+            background-size:cover;
+        }
+        .item09 {
+            background:url(../images/item/coffeecup2.png) no-repeat center center;
+            background-size:cover;
+        }
+    }
+}
+/*sec01 end*/
+
+
+.banner_content{
+    margin: 100px auto 0;
+    position: relative;
+.banner{
+    width:1000px;
+    height:125px;
+    background:gray;
+    display: block;
+    margin:0 auto 20px;
+}
+.banner01 {
+    background: url(../images/img/items_banner.jpg) no-repeat center -70px;    
+    background-size: cover;
+}
+.banner02 {
+    background: url(../images/img/items_banner2.jpg) white no-repeat center center;    
+    background-size: contain;
+}
+.banner03 {
+    background: url(../images/img/campaign_banner.png) no-repeat center -80px;    
+    background-size: cover;
+}
+}
+

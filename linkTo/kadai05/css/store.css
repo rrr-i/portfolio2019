@@ -1,0 +1,187 @@
+main {
+  margin: 100px 0 0 0;
+}
+
+main section {
+  width: 850px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  margin: 80px auto 0;
+  padding: 20px 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /*&:hover {
+            box-shadow:0 6px 12px -6px $black;
+            transition: 0.5s;
+        }*/
+}
+
+main section h2 {
+  text-align: center;
+  border-bottom: 2px solid #080808;
+  color: #080808;
+  width: 350px;
+  margin: 0 auto 100px;
+  font-size: 1.8em;
+  padding: 0 0 20px 0;
+  -webkit-box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+}
+
+main section .flexwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section .flexwrap .map_content {
+  display: block;
+  width: 350px;
+  margin: 0 0 80px 0;
+}
+
+main section .flexwrap .map_content h3 {
+  font-size: 1.4em;
+  margin: 0 0 20px 0;
+  padding: 20px 0 10px 0;
+  border-bottom: 6px dotted #888888;
+}
+
+main section .flexwrap .map_content td {
+  line-height: 30px;
+}
+
+main section .flexwrap .map_content td:first-child {
+  width: 100px;
+  font-family: "YuGo-Bold";
+}
+
+.contact {
+  text-align: center;
+  border-bottom: 2px solid #080808;
+  color: #080808;
+  width: 350px;
+  margin: 150px auto 100px;
+  font-size: 1.8em;
+  padding: 0 0 20px 0;
+  -webkit-box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.7);
+}
+
+form {
+  position: relative;
+  width: 850px;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+}
+
+form label {
+  width: 200px;
+  font-family: "YuGo-Medium";
+}
+
+form label::before {
+  content: "*";
+  color: red;
+  font-size: 1em;
+}
+
+form .form_content_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0 0 0;
+}
+
+form select {
+  width: 200px;
+  height: 40px;
+  border: none;
+  font-family: sans-serif;
+  text-indent: 1em;
+  background: white;
+  font-size: 1em;
+  border: 1px solid #080808;
+}
+
+form select:focus {
+  outline: none;
+}
+
+form input[type="text"] {
+  width: 250px;
+  height: 40px;
+  background: white;
+  border: none;
+  text-indent: 1em;
+  font-size: 1em;
+  border: 1px solid #080808;
+}
+
+form input[type="text"]:focus {
+  background: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+}
+
+form input[type="email"] {
+  width: 300px;
+  height: 40px;
+  background: white;
+  border: none;
+  text-indent: 1em;
+  font-size: 1em;
+  border: 1px solid #080808;
+}
+
+form input[type="email"]:focus {
+  background: #F9F9F9;
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+}
+
+form textarea {
+  width: 600px;
+  height: 200px;
+  background: white;
+  border: none;
+  font-size: 0.9em;
+  text-indent: 1em;
+  padding: 1em 0 0 0;
+  border: 1px solid #080808;
+}
+
+form textarea:focus {
+  background: #fcfcfc;
+}
+
+form button {
+  background: #60ddff;
+  margin: 50px 0 0 200px;
+  width: 175px;
+  line-height: 40px;
+  font-size: 1em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+form button:hover {
+  background: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #4cb3d0;
+  outline: 1px solid #4cb3d0;
+}
+/*# sourceMappingURL=store.css.map */

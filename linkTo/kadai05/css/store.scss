@@ -1,0 +1,164 @@
+$keyscolor:#1e285f;
+$black:#080808;
+$sky:#00aadb;
+$fontM:"YuGo-Medium";
+$fontB:"YuGo-Bold";
+$gray : rgb(255, 255, 255);
+
+
+main {
+    margin:100px 0 0 0;
+    section{
+        width:850px;
+        height:auto;
+        margin: 0 auto;
+        position: relative;
+        margin:80px auto 0;
+        padding:20px 0;
+        transition: 0.2s;
+        h2{
+            text-align: center;
+            border-bottom:2px solid $black;
+            color:$black;
+            width:350px;
+            margin:0 auto 100px;
+            font-size: 1.8em;
+            padding: 0 0 20px 0;
+            box-shadow: 0 6px 8px -6px rgba(0,0,0,0.7);
+        }
+        /*&:hover {
+            box-shadow:0 6px 12px -6px $black;
+            transition: 0.5s;
+        }*/
+        .flexwrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .map_content {
+            display: block;
+            width:350px;
+            margin:0 0 80px 0;
+            h3{
+                font-size:1.4em;
+                margin:0 0 20px 0;
+                padding:20px 0 10px 0;
+                border-bottom:6px dotted #888888;
+            }
+            td{
+                line-height:30px;
+            }
+            td:first-child{
+                width:100px;
+                font-family: $fontB;
+            }
+        }
+    }
+}
+}
+
+    .contact{
+        text-align: center;
+        border-bottom:2px solid $black;
+        color:$black;
+        width:350px;
+        margin:150px auto 100px;
+        font-size: 1.8em;
+        padding: 0 0 20px 0;
+        box-shadow: 0 6px 8px -6px rgba(0,0,0,0.7);
+    }
+    form {
+        position: relative;
+        width:850px;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+        label {
+            width:200px;
+            font-family: $fontM;
+            &::before {
+                content:"*";
+                color:red;
+                font-size:1em;
+            }
+        }
+        .form_content_box {
+            display:flex;
+            align-items:center;
+            margin:40px 0 0 0;
+        }
+        select {
+            width:200px;
+            height:40px;
+            border:none;
+            font-family:sans-serif;
+            text-indent:1em;
+            background: $gray;
+        font-size:1em;
+        border:1px solid $black;
+            &:focus {
+                outline:none;
+            }
+        }
+        input[type="text"]{
+            width:250px;
+            height:40px;
+            background:$gray;
+            border:none;
+            text-indent:1em;
+            font-size:1em;
+        border:1px solid $black;
+
+            &:focus {
+                background:#F9F9F9;
+                border:1px solid #D3D3D3;
+                border-radius:10px;
+            }
+        }
+        input[type="email"]{
+            width:300px;
+            height:40px;
+            background:$gray;
+            border:none;
+            text-indent:1em;
+            font-size:1em;
+        border:1px solid $black;
+
+            &:focus {
+                background:#F9F9F9;
+                border:1px solid #D3D3D3;
+                border-radius:10px;
+            }
+
+        }
+        textarea{
+            width:600px;
+            height:200px;
+            background:$gray;
+            border:none;
+            font-size:0.9em;
+            text-indent:1em;
+            padding:1em 0 0 0;
+        border:1px solid $black;
+
+             &:focus {
+                background:#fcfcfc;
+            }
+
+        }
+        button {
+            background:#60ddff;
+            margin:50px 0 0 200px;
+            width:175px;
+            line-height:40px;
+            font-size:1em;
+            transition:0.4s;
+            border:none;
+            cursor:pointer;
+            color:white;
+            &:hover {
+            background:transparent;
+                transition:0.2s;
+                color:#4cb3d0;
+                outline:1px solid #4cb3d0;
+            }
+        }
+    }
