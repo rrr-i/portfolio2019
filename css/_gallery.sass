@@ -72,7 +72,6 @@
       margin-bottom: 65px
       text-align: center
       transition: .2s
-      filter: grayscale(200%) contrast(1.1) brightness(.9)
       @media screen and (max-width: 1180px)
         width: 50%
       @media screen and (max-width: 768px)
@@ -84,9 +83,6 @@
         margin-bottom: 10px
         &:nth-child(odd)
           margin-right: 0px
-      &:hover
-        filter: grayscale(0%)
-        transition: .3s
       @media screen and (max-width: 768px)
         &:hover
           transform: none
@@ -97,10 +93,14 @@
         height: 225px
         margin: 0 auto
         overflow: hidden
+        filter: grayscale(200%) contrast(1.1) brightness(.95)
         @media screen and (max-width: 768px)
           width: 100%
         @media screen and (max-width: 450px)
           width: 225px
+        &:hover
+          filter: grayscale(0%)
+          transition: .3s
         &:hover > img
           transform: scale(1.05)
           transition: .5s

@@ -1,12 +1,6 @@
 // JavaScript Document
 
 
-document.querySelector(".header-inner nav").addEventListener('click', function(ev){
-  document.querySelector('.header-inner nav').classList.toggle('clicked');
-  document.querySelector('body').classList.toggle('hidden');
-  document.querySelector('.menu-box').classList.toggle('menu-box-visible');
-});
-
 $(function () {
 
   $(window).scroll(function(){
@@ -15,7 +9,6 @@ $(function () {
     }else{
       $(".header-inner img").css("opacity","1");
     };
-
   });
 
   $(".main-img a, .main-img-tate a").on("click",function(){

@@ -1,0 +1,536 @@
+@font-face {
+  font-family: "silver";
+  src: url("../font/Silver South Serif.otf");
+}
+
+@-webkit-keyframes bg {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rightbox {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(20px, 0px);
+            transform: translate(20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes rightbox {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(20px, 0px);
+            transform: translate(20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes figcap {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px) rotate(-90deg);
+            transform: translate(0, 50px) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px) rotate(-90deg);
+            transform: translate(0px, 0px) rotate(-90deg);
+  }
+}
+
+@keyframes figcap {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px) rotate(-90deg);
+            transform: translate(0, 50px) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px) rotate(-90deg);
+            transform: translate(0px, 0px) rotate(-90deg);
+  }
+}
+
+@-webkit-keyframes rect {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-5%, 5%);
+            transform: translate(-5%, 5%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes rect {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-5%, 5%);
+            transform: translate(-5%, 5%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes title {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@keyframes title {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@-webkit-keyframes titleColor {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #f2f2f2;
+  }
+}
+
+@keyframes titleColor {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #f2f2f2;
+  }
+}
+
+.fadein {
+  -webkit-animation: fadein 2s ease-in-out 0s forwards;
+          animation: fadein 2s ease-in-out 0s forwards;
+}
+
+* {
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: normal;
+}
+
+body {
+  -webkit-animation: bg 12s linear infinite;
+          animation: bg 12s linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(#6b7a95), to(#98afc5));
+  background: linear-gradient(to right, #6b7a95, #98afc5);
+  background-size: 400% 400%;
+}
+
+main {
+  overflow: hidden;
+}
+
+.firstview {
+  width: 100%;
+  max-width: 1200px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 100px auto 0;
+  padding: 0 10% 0 40px;
+  position: relative;
+}
+
+@media screen and (max-width: 550px) {
+  .firstview {
+    max-width: initial;
+    padding: 0 8%;
+  }
+}
+
+.firstview figure {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+
+.firstview figure img {
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: fadein 2s ease-in-out 1s forwards;
+          animation: fadein 2s ease-in-out 1s forwards;
+}
+
+.firstview figure figcaption {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: #f2f2f2;
+  font-size: 2.5rem;
+  letter-spacing: .15rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  font-family: "silver";
+  -webkit-animation: figcap 2s ease-in-out 2.8s forwards;
+          animation: figcap 2s ease-in-out 2.8s forwards;
+  opacity: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .firstview figure figcaption {
+    font-size: 2rem;
+    left: 15px;
+  }
+}
+
+.firstview figure figcaption:first-letter {
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .firstview figure figcaption:first-letter {
+    font-size: 3rem;
+  }
+}
+
+.firstview figure .rect {
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 840px;
+  border: 1px solid #98afc5;
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  z-index: -1;
+  -webkit-animation: rect 1.8s ease-in-out 1.7s forwards;
+          animation: rect 1.8s ease-in-out 1.7s forwards;
+  opacity: 0;
+}
+
+.firstview svg {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 40%;
+  -webkit-animation: fadein 2s ease-in .2s forwards;
+          animation: fadein 2s ease-in .2s forwards;
+  opacity: 0;
+}
+
+.firstview svg path {
+  fill: #f2f2f2;
+}
+
+.firstview svg circle {
+  fill: #f2f2f2;
+}
+
+.firstview .right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-animation: rightbox 2s ease-in-out 2.8s forwards;
+          animation: rightbox 2s ease-in-out 2.8s forwards;
+  opacity: 0;
+}
+
+@media screen and (max-width: 820px) {
+  .firstview .right {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+  }
+}
+
+.firstview .right h2 {
+  font-size: 2.5rem;
+  letter-spacing: .1em;
+}
+
+.firstview .right p {
+  font-size: 1rem;
+  letter-spacing: .1em;
+  line-height: 2em;
+  margin-top: 20px;
+  font-family: serif;
+}
+
+.firstview .right p:first-letter {
+  font-size: 2rem;
+}
+
+.secondview {
+  width: 100%;
+  max-width: 1100px;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  margin: 50px auto 0;
+  padding: 0 0 50px 0;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondview section {
+  opacity: 0;
+  margin: 5em 0 1em;
+}
+
+.secondview h1 {
+  font-family: "silver";
+  font-size: 1.5rem;
+  text-align: right;
+  letter-spacing: .2em;
+  opacity: 0;
+}
+
+.secondview h2 {
+  display: inline-block;
+  padding: .5em 1em;
+  color: transparent;
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  position: relative;
+}
+
+.secondview .fadein h2 {
+  -webkit-animation: titleColor 1s ease-in-out .5s forwards;
+          animation: titleColor 1s ease-in-out .5s forwards;
+}
+
+.secondview .fadein h2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+  background: #f2f2f2;
+  -webkit-animation: title 1s ease-in-out .5s forwards;
+          animation: title 1s ease-in-out .5s forwards;
+}
+
+.secondview .fadein p {
+  width: 65%;
+  margin-left: auto;
+  padding: 0 2em 0 0;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.75em;
+  letter-spacing: .125em;
+  -webkit-animation: fadein 1s ease-in-out 1.5s forwards;
+          animation: fadein 1s ease-in-out 1.5s forwards;
+  opacity: 0;
+}
+
+.secondview .fadein img {
+  display: block;
+  width: 75%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  -webkit-animation: fadein 1s ease-in-out 1.5s forwards;
+          animation: fadein 1s ease-in-out 1.5s forwards;
+  opacity: 0;
+}
+
+.thirdview {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e4a8be), to(#696790));
+  background: linear-gradient(to top, #e4a8be, #696790);
+  padding: 100px 0;
+}
+
+.soloexhibition {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  opacity: 0;
+}
+
+.soloexhibition h2 {
+  font-family: "silver",serif;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: .05em;
+  text-align: left;
+  width: 100%;
+}
+
+.soloexhibition p {
+  margin-top: 15px;
+  text-align: justify;
+  text-indent: 1em;
+  line-height: 1.75em;
+  letter-spacing: .05em;
+}
+
+.soloexhibition img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.soloexhibition .map {
+  width: 50%;
+}
+
+.soloexhibition dl {
+  text-align: left;
+}
+
+.soloexhibition dd {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.soloexhibition dt {
+  margin-top: 5px;
+  letter-spacing: .05em;
+  line-height: 1.5em;
+}
+
+.soloexhibition h3 {
+  text-align: left;
+}
+
+.panf {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panf img {
+  width: 45%;
+  height: 45%;
+}
+
+.arrow {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+
+.arrow div {
+  width: 40px;
+  height: 40px;
+  border-left: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-45%, 45%) rotate(135deg);
+          transform: translate(-45%, 45%) rotate(135deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.arrow a:hover div {
+  border-left: 2px solid #98afc5;
+  border-bottom: 2px solid #98afc5;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+/*# sourceMappingURL=index.css.map */
