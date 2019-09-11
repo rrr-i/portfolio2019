@@ -327,6 +327,7 @@ header h1 img {
 
 body {
   background: #f2f2f2;
+  font-size: 12px;
 }
 
 body.hidden {
@@ -1042,7 +1043,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   font-weight: bold;
   line-height: .4em;
   letter-spacing: .1em;
-  word-break: break-all;
+  white-space: nowrap;
   font-family: "bizon";
 }
 
