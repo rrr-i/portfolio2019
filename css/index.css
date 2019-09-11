@@ -179,13 +179,13 @@ input, select {
     stroke-width: .5px;
   }
   50% {
-    fill: #393332;
+    fill: #B5B5B6;
     stroke-width: .5px;
   }
   100% {
     stroke-dashoffset: 0;
     stroke-width: 0px;
-    fill: #393332;
+    fill: #B5B5B6;
   }
 }
 
@@ -200,13 +200,13 @@ input, select {
     stroke-width: .5px;
   }
   50% {
-    fill: #393332;
+    fill: #B5B5B6;
     stroke-width: .5px;
   }
   100% {
     stroke-dashoffset: 0;
     stroke-width: 0px;
-    fill: #393332;
+    fill: #B5B5B6;
   }
 }
 
@@ -385,7 +385,7 @@ main .section-wrap svg {
 }
 
 main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
-  stroke: #393332;
+  stroke: #B5B5B6;
   fill: transparent;
   -webkit-animation: Dotted 6s ease-in .4s forwards;
           animation: Dotted 6s ease-in .4s forwards;
@@ -522,19 +522,13 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 }
 
 #gallery section h2 {
-  font-size: 1.4em;
-  font-family: "sunn";
+  margin-bottom: 20px;
+  font-size: 3em;
+  font-family: "bizon";
   line-height: 1.6em;
   letter-spacing: .15em;
   text-align: center;
   color: #393332;
-}
-
-@media screen and (max-width: 450px) {
-  #gallery section h2 {
-    padding-top: 70px;
-    font-size: 1.6em;
-  }
 }
 
 #gallery section .flex-box {
@@ -697,12 +691,13 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 }
 
 #gallery-common {
-  padding-top: 150px;
+  margin-top: 150px;
 }
 
 @media screen and (max-width: 768px) {
   #gallery-common {
     overflow: scroll;
+    margin-top: 100px;
   }
 }
 
@@ -720,13 +715,13 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
     -webkit-transform: none;
             transform: none;
     width: 95%;
-    margin: 50px auto 0;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 450px) {
   #gallery-common .gallery-common-inner {
-    margin: 80px auto 0;
+    margin: 0 auto;
   }
 }
 
@@ -1053,8 +1048,14 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 500px) {
+  #profile .profile-img {
+    width: 200px;
+  }
+}
+
 #profile .profile-img img {
-  width: 250px;
+  width: 100%;
   position: relative;
   z-index: 1;
   border-radius: 20px;
@@ -1073,6 +1074,14 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   letter-spacing: .1em;
   white-space: nowrap;
   font-family: "bizon";
+}
+
+@media screen and (max-width: 500px) {
+  #profile .profile-img .school {
+    font-size: 2.8em;
+    left: -1em;
+    top: -1em;
+  }
 }
 
 #profile .profile-img .schoolname {
@@ -1096,6 +1105,12 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
   font-family: "bizon";
 }
 
+@media screen and (max-width: 500px) {
+  #profile .profile-img .name {
+    font-size: 2.4em;
+  }
+}
+
 #profile .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1112,6 +1127,35 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 #profile .skills ul img {
   width: 60px;
+}
+
+#profile .profile-description ul {
+  width: 250px;
+  margin: 20px auto 0;
+}
+
+#profile .profile-description ul li {
+  margin-bottom: 10px;
+}
+
+#profile .profile-description ul li a {
+  color: #393332;
+  text-decoration-skip-ink: none;
+}
+
+#profile .profile-description ul li a:hover {
+  color: #B5B5B6;
+}
+
+#profile .profile-description ul li:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  #profile .profile-description ul {
+    width: 200px;
+    font-size: .9em;
+  }
 }
 
 footer {

@@ -25,14 +25,20 @@ html(lang="ja")
             .flex-box
               include ./pug/gallery_import
         #profile
-          .profile-img
-            p.school GRAPHIC DESIGN
-              br
-              |
-              span.schoolname HAL TOKYO
-            img(src="./images/myprofile.jpg", alt="")
-            p.name FUNATSU RIKI
-          
+          section
+            .profile-img
+              p.school GRAPHIC DESIGN
+                br
+                |
+                span.schoolname HAL TOKYO
+              img(src="./images/myprofile.jpg", alt="")
+              p.name FUNATSU RIKI
+            .profile-description
+              ul
+                li 好き： サカナクション　Apple　WEB
+                li 趣味： 写真　ランニング　ダーツ
+                li
+                  a(href="https://www.instagram.com/ig__riki/") 写真活動 - instagram
       footer
         p &copy; 2019 Riki F.
     script(src="./js/jquery-3.2.1.min.js")
