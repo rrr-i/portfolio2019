@@ -123,7 +123,7 @@ main
       &:first-letter
         font-size: 4.5rem
         @media screen and (max-width: 550px)
-          font-size: 3rem
+          font-size: 2.5rem
     .rect
       width: 100%
       max-width: 700px
@@ -167,8 +167,12 @@ main
       line-height: 2em
       margin-top: 20px
       font-family: serif
+      @media screen and (max-width: 550px)
+        font-size: .8rem
       &:first-letter
         font-size: 2rem
+        @media screen and (max-width: 550px)
+          font-size: 1.5rem
 .secondview
   width: 100%
   max-width: 1100px
@@ -186,7 +190,6 @@ main
     text-align: right
     letter-spacing: .2em
     opacity: 0
-
   h2
     display: inline-block
     padding: .5em 1em
@@ -195,6 +198,8 @@ main
     font-size: 1.8rem
     font-weight: 100
     position: relative
+    @media screen and (max-width: 550px)
+      font-size: 1.2rem
   .fadein h2
     animation: titleColor 1s ease-in-out .5s forwards
   .fadein h2::before
@@ -217,6 +222,8 @@ main
     letter-spacing: .125em
     animation: fadein 1s ease-in-out 1.5s forwards
     opacity: 0
+    @media screen and (max-width: 550px)
+      font-size: .8rem
   .fadein img
     display: block
     width: 75%
@@ -244,6 +251,8 @@ main
     letter-spacing: .05em
     text-align: left
     width: 100%
+    @media screen and (max-width: 550px)
+      font-size: 2em
   p
     margin-top: 15px
     text-align: justify
