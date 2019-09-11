@@ -1,0 +1,560 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote before, blockquote after,
+q before, q after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "serif";
+  src: url(../font/NotoSerif-Light.ttf);
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  padding: 20px 30px;
+  background: #f2f2f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .humberger {
+  width: 50px;
+}
+
+header .humberger .humberger-border {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin: 10px auto 0;
+  background: #947A6D;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header .humberger .humberger-border:nth-child(1) {
+  margin: 0 auto;
+}
+
+header .humberger .active:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(0, -8px);
+          transform: rotate(45deg) translate(0, -8px);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+header .humberger .active:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, 8px);
+          transform: rotate(-45deg) translate(0, 8px);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+header h1 {
+  color: #101010;
+  font-size: 1.5em;
+  letter-spacing: .5em;
+}
+
+header .access {
+  width: 50px;
+  text-align: center;
+}
+
+header .access i {
+  color: #947A6D;
+  font-size: 2em;
+}
+
+header nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-box {
+    max-width: inherit;
+  }
+}
+
+body {
+  background: #101010;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+body main {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+body #firstview {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+body #firstview .left-box, body #firstview .right-box {
+  width: 50%;
+  height: 300px;
+  background: url("../images/main_image.jpg") center center;
+  background-size: cover;
+}
+
+body #firstview .right-box {
+  background: url("../images/main_image2.jpg") center center;
+  background-size: cover;
+}
+
+body #firstview .page-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgba(242, 242, 242, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+body #firstview .page-arrow i {
+  margin: 15px 0 0 0;
+  color: #f2f2f2;
+  font-size: 2em;
+}
+
+body .top-content {
+  width: 95%;
+  height: auto;
+  margin: 20px auto 0;
+  padding: 10px 0;
+  background: #947A6D;
+  color: #f2f2f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .top-content-wrap {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 40px 0;
+  border: 10px solid #101010;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .top-content-wrap h2 {
+  letter-spacing: .4em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+body .top-content-wrap h2::after {
+  display: block;
+  content: "";
+  width: 70%;
+  margin-top: 15px;
+  margin-right: auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+body .top-content-wrap p {
+  margin: 20px 0 0 0;
+  font-size: .9em;
+  line-height: 2em;
+  letter-spacing: .05em;
+  text-align: center;
+}
+
+body .top-content-wrap .news-content {
+  margin-top: 60px;
+}
+
+body .top-content-wrap .news-content ul {
+  width: 45%;
+  margin: 20px auto 0;
+}
+
+body .top-content-wrap .news-content li {
+  font-size: .95em;
+  line-height: 2em;
+  letter-spacing: .05em;
+  text-decoration: underline;
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+body .top-content-wrap .news-content h2::after {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+body .title {
+  width: 70%;
+  margin: 0 auto 20px;
+  padding-bottom: 15px;
+  color: white;
+  letter-spacing: .3em;
+  font-size: 1.3em;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+body .menu-content {
+  margin-top: 60px;
+}
+
+body .menu-content .menu-box, body .menu-content .alcohol-box {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: url(../images/alcohol.png) center center;
+  background-size: cover;
+}
+
+body .menu-content .menu-box:hover > .more, body .menu-content .alcohol-box:hover > .more {
+  background: #f2f2f2;
+  color: #101010;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body .menu-content .alcohol-box {
+  margin-top: 40px;
+  background: url(../images/food.png) center center;
+  background-size: cover;
+}
+
+body .menu-content .caption-alcohol, body .menu-content .caption-food {
+  color: #f2f2f2;
+  position: absolute;
+  right: 14%;
+  top: 10%;
+  letter-spacing: .4em;
+  line-height: 1.75em;
+  font-size: 1.1em;
+}
+
+body .menu-content .caption-food {
+  color: #101010;
+  left: 10%;
+  top: 14%;
+}
+
+body .menu-content .more {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(242, 242, 242, 0.7);
+  color: #101010;
+  text-align: center;
+  font-size: 1em;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .access-content {
+  margin-top: 60px;
+}
+
+body .access-content iframe {
+  width: 100%;
+}
+
+body .access-content p {
+  margin-top: 10px;
+  color: #f2f2f2;
+  text-align: center;
+  letter-spacing: .05em;
+  line-height: 1.75em;
+}
+
+body .access-content p a {
+  color: skyblue;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #firstview {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #firstview .left-box, #firstview .right-box {
+    width: 50%;
+    height: 300px;
+    background: url("../images/main_image.jpg") center center;
+    background-size: cover;
+  }
+  #firstview .right-box {
+    background: url("../images/main_image2.jpg") center center;
+    background-size: cover;
+  }
+  #firstview .page-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(242, 242, 242, 0.6);
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+  }
+  #firstview .page-arrow i {
+    margin: 15px 0 0 0;
+    color: #f2f2f2;
+    font-size: 2em;
+  }
+  .top-content {
+    width: 95%;
+    height: auto;
+    margin: 20px auto 0;
+    padding: 10px 0;
+    background: #947A6D;
+    color: #f2f2f2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .top-content-wrap {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 40px 0;
+    border: 10px solid #101010;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .top-content-wrap h2 {
+    letter-spacing: .4em;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .top-content-wrap h2::after {
+    display: block;
+    content: "";
+    width: 70%;
+    margin-top: 15px;
+    margin-right: auto;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .top-content-wrap p {
+    margin: 20px 0 0 0;
+    font-size: .9em;
+    line-height: 2em;
+    letter-spacing: .05em;
+    text-align: center;
+  }
+  .top-content-wrap .news-content {
+    margin-top: 60px;
+  }
+  .top-content-wrap .news-content ul {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+  .top-content-wrap .news-content li {
+    font-size: .95em;
+    line-height: 2em;
+    letter-spacing: .05em;
+    text-decoration: underline;
+    list-style-type: none;
+  }
+  .top-content-wrap .news-content h2::after {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .title {
+    width: 70%;
+    margin: 0 auto 20px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: .3em;
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .menu-content {
+    margin-top: 60px;
+  }
+  .menu-content .menu-box, .menu-content .alcohol-box {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: url(../images/alcohol.png) center center;
+    background-size: cover;
+  }
+  .menu-content .menu-box:hover > .more, .menu-content .alcohol-box:hover > .more {
+    background: #f2f2f2;
+    color: #101010;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .menu-content .alcohol-box {
+    margin-top: 40px;
+    background: url(../images/food.png) center center;
+    background-size: cover;
+  }
+  .menu-content .caption-alcohol, .menu-content .caption-food {
+    color: #f2f2f2;
+    position: absolute;
+    right: 14%;
+    top: 10%;
+    letter-spacing: .4em;
+    line-height: 1.75em;
+    font-size: 1.1em;
+  }
+  .menu-content .caption-food {
+    color: #101010;
+    left: 10%;
+    top: 14%;
+  }
+  .menu-content .more {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    background: rgba(242, 242, 242, 0.7);
+    color: #101010;
+    text-align: center;
+    font-size: 1em;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .access-content {
+    margin-top: 60px;
+  }
+  .access-content iframe {
+    width: 100%;
+  }
+  .access-content p {
+    margin-top: 10px;
+    color: #f2f2f2;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 1.75em;
+  }
+  .access-content p a {
+    color: skyblue;
+  }
+}
+
+footer {
+  width: 100%;
+  margin: 40px 0 10px 0;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: .8em;
+  letter-spacing: .1em;
+}
+/*# sourceMappingURL=index.css.map */
