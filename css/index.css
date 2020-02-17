@@ -571,7 +571,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 @media screen and (max-width: 450px) {
   #gallery section .flex-box {
-    width: 310px;
+    width: 100%;
   }
 }
 
@@ -601,7 +601,7 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 @media screen and (max-width: 450px) {
   #gallery section .gallery-content {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   #gallery section .gallery-content:nth-child(odd) {
     margin-right: 0px;
@@ -636,7 +636,8 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 @media screen and (max-width: 450px) {
   #gallery section .gallery-content a {
-    width: 225px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -676,8 +677,8 @@ main .section-wrap svg path:nth-child(n+5):nth-child(-n+8) {
 
 @media screen and (max-width: 450px) {
   #gallery section .gallery-content img {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
   }
 }
 
